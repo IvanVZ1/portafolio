@@ -1,14 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Auditoría</title>
+
+  <title>Portafolio | Gestión de Proyectos de TI</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --bg: #f7f5f0;
@@ -58,11 +66,18 @@
 
     h1 {
       font-family: 'DM Serif Display', serif;
-      font-size: clamp(1.4rem, 5vw, 2rem);
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
       font-weight: 400;
       line-height: 1.2;
       color: var(--text);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-size: 11px;
+      line-height: 1.8;
+      color: var(--muted);
+      margin-bottom: 1.8rem;
     }
 
     .section-label {
@@ -73,7 +88,6 @@
       margin-bottom: 10px;
     }
 
-    /* Lista de descargas */
     .download-list {
       display: flex;
       flex-direction: column;
@@ -92,8 +106,14 @@
       transition: border-color 0.15s, background 0.15s, transform 0.1s;
     }
 
-    .download-item:hover  { border-color: #aaa; background: #fafaf8; }
-    .download-item:active { transform: scale(0.99); }
+    .download-item:hover {
+      border-color: #aaa;
+      background: #fafaf8;
+    }
+
+    .download-item:active {
+      transform: scale(0.99);
+    }
 
     .item-icon {
       width: 40px;
@@ -105,12 +125,13 @@
       flex-shrink: 0;
     }
 
-    .icon-pdf   { background: #fff0f0; }
-    .icon-drive { background: #f0fff4; }
+    .icon-pdf {
+      background: #fff0f0;
+    }
 
     .item-info {
       flex: 1;
-      min-width: 0; /* evita overflow en mobile */
+      min-width: 0;
     }
 
     .item-info .name {
@@ -144,65 +165,104 @@
       flex-shrink: 0;
     }
 
-    .badge-pdf   { background: #fff0f0; color: #c0392b; }
-    .badge-drive { background: #f0fff4; color: #1e7e40; }
+    .badge-pdf {
+      background: #fff0f0;
+      color: #c0392b;
+    }
 
-    .item-arrow { color: var(--muted); flex-shrink: 0; }
+    .item-arrow {
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .footer {
+      border-top: 1px solid var(--border);
+      margin-top: 1.8rem;
+      padding-top: 1rem;
+      font-size: 9px;
+      color: var(--muted);
+      line-height: 1.7;
+      text-align: center;
+    }
   </style>
 </head>
-<body>
-  <div class="card">
-    <span class="tag">Auditoría</span>
-    <h1>Ejecución de la auditoría en la empresa</h1>
 
-    <p class="section-label">Descargar</p>
+<body>
+
+  <main class="card">
+
+    <span class="tag">Portafolio académico</span>
+
+    <h1>Gestión de Proyectos de TI</h1>
+
+    <p class="description">
+      Portafolio de evidencias correspondiente a la materia
+      Gestión de Proyectos de Tecnologías de la Información.
+      En este documento se recopilan las actividades,
+      trabajos y conocimientos desarrollados durante el curso.
+    </p>
+
+    <p class="section-label">Documento del portafolio</p>
+
     <div class="download-list">
 
       <!-- PDF -->
-      <a class="download-item" href="Equipo1_Auditoria_Empresa.pdf" download="Equipo1_Auditoria_Empresa.pdf">
+      <a
+        class="download-item"
+        href="Portafolio_Gestion_Proyectos_TI.pdf"
+        download="Portafolio_Gestion_Proyectos_TI.pdf"
+      >
+
         <div class="item-icon icon-pdf">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="#c0392b" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
             <polyline points="14 2 14 8 20 8"/>
             <line x1="9" y1="13" x2="15" y2="13"/>
             <line x1="9" y1="17" x2="15" y2="17"/>
             <line x1="9" y1="9" x2="11" y2="9"/>
+
           </svg>
         </div>
+
         <div class="item-info">
-          <div class="name">Equipo 1 — Auditoría de empresa</div>
-          <div class="meta">Equipo1_Auditoria_Empresa.pdf</div>
+          <div class="name">
+            Portafolio — Gestión de Proyectos de TI
+          </div>
+
+          <div class="meta">
+            Portafolio_Gestion_Proyectos_TI.pdf
+          </div>
         </div>
+
         <span class="item-badge badge-pdf">PDF</span>
-        <svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+
+        <svg class="item-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16" height="16" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
           <polyline points="7 10 12 15 17 10"/>
           <line x1="12" y1="15" x2="12" y2="3"/>
-        </svg>
-      </a>
 
-      <!-- Drive: Videos -->
-      <a class="download-item" href="https://drive.google.com/drive/folders/1RVnnKyMpk1hu7Qxx5nnuCa8n-u0cTCq9" target="_blank" rel="noopener noreferrer">
-        <div class="item-icon icon-drive">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e7e40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 2 19 22 19"/>
-            <line x1="12" y1="2" x2="7" y2="19"/>
-            <line x1="12" y1="2" x2="17" y2="19"/>
-          </svg>
-        </div>
-        <div class="item-info">
-          <div class="name">Videos de la auditoría</div>
-          <div class="meta">Google Drive — Equipo 1</div>
-        </div>
-        <span class="item-badge badge-drive">DRIVE</span>
-        <svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-          <polyline points="15 3 21 3 21 9"/>
-          <line x1="10" y1="14" x2="21" y2="3"/>
         </svg>
+
       </a>
 
     </div>
-  </div>
+
+    <footer class="footer">
+      Portafolio académico · Gestión de Proyectos de TI
+      <br />
+      Tecnologías de la Información
+    </footer>
+
+  </main>
+
 </body>
 </html>
